@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>University of Chicago Tennis Club</title>
+  <meta name="description" content="The University of Chicago Tennis Club">
+  <meta name="author" content="Loic Sharma">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41738668-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>University of Chicago Tennis Club</h1>
+  </div>
+
+  <div class="container">
+  </div> 
+
+
+<a href="#" class="scrollup">Scroll</a>
+
+  <div class="footer">
+    <p>Site Maintained by UC Tennis Club. Copyright 2013.</p>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      function scrollToSection(URL) {
+        var index = URL.lastIndexOf('#');
+
+        if(index > -1) {
+          var sectionName = URL.substr(index + 1);
+          var offset = $("#"+sectionName+"-content").offset();
+
+          if(offset != null) {
+            $('html, body').animate({
+             scrollTop: offset.top
+            }, 600);
+          }
+        }
+      }
+
+      scrollToSection(document.URL);
+
+      $("div.header div.navigation ul li a").click(function() {
+        scrollToSection(this.href);
+      });
+
+      $(window).scroll(function() {
+        if($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        }
+        else {
+          $('.scrollup').fadeOut();
+        }
+      }); 
+ 
+      $('.scrollup').click(function(){
+        $("html, body").animate({scrollTop: 0}, 600);
+        
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

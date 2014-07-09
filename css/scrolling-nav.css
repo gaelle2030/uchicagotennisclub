@@ -1,0 +1,318 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 24px;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+@media(min-width:767px) {
+	.header {
+		width: 100%;
+		/*width: 728px;*/
+	}
+
+	.header h1 {
+		background-color: rgb(125, 1, 1);
+		background: -webkit-linear-gradient(top, rgb(125, 1, 1) 0%, rgb(108, 14, 6) 100%);
+		background: -moz-linear-gradient(top, rgb(125, 1, 1) 0%, rgb(108, 14, 6) 100%);
+		background: -o-linear-gradient(top, rgb(125, 1, 1) 0%, rgb(108, 14, 6) 100%);
+		background: -ms-linear-gradient(top, rgb(125, 1, 1) 0%, rgb(108, 14, 6) 100%);
+		background: linear-gradient(top, rgb(125, 1, 1) 0%, rgb(108, 14, 6) 100%);
+		line-height: 125px;
+		text-align: center;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: #FFFFFF;
+		font-size: 50px;
+		font-weight: 200;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(74, 4, 4);
+		border-bottom-width: 1px;
+	}
+
+	.navbar {
+		padding: 0px 0;
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+		background-color: rgb(125, 1, 1);
+		background: -webkit-linear-gradient(top, rgb(108, 15, 6) 0%, rgb(101, 18, 12) 100%);
+		background: -moz-linear-gradient(top, rgb(108, 15, 6) 0%, rgb(101, 18, 12) 100%);
+		background: -o-linear-gradient(top, rgb(108, 15, 6) 0%, rgb(101, 18, 12) 100%);
+		background: -ms-linear-gradient(top, rgb(108, 15, 6) 0%, rgb(101, 18, 12) 100%);
+		background: linear-gradient(top, rgb(108, 15, 6) 0%, rgb(101, 18, 12) 100%);
+		color: #FFFFFF;
+		text-align: center;
+		width: 100%;
+		position: fixed;
+		z-index: 1000;
+	}
+
+	.navbar ul.nav.navbar-nav {
+		list-style-type: none;
+		height: 51px;
+		width: 1000px;
+		margin: 0 auto 0 auto;
+		float: none;
+	}
+
+	.navbar ul li {
+		display: inline;
+		line-height: 100%;
+		float: none;
+	}
+
+	.header .navbar ul li a {
+		display: inline-block;
+		width: 13%;
+		color: inherit;
+		text-decoration: inherit;
+		float: none;
+	}
+
+	.header .navbar ul li a:hover {
+		background-color: white;
+		color: rgb(101, 17, 16);
+		text-decoration: none;
+		border-bottom-color: #FFFFFF;
+		float: none;
+	}
+
+	.top-nav-collapse {
+		/* Customize the look and feel of the collapsed top nav here */
+		padding: 0;
+	}
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #fff;
+}
+
+.practices-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #eee;
+}
+
+.competition-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #fff;
+}
+
+.events-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #eee;
+}
+
+.contact-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #fff;
+}
+
+.stringing-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #eee;
+}
+
+.officers-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #fff;
+}
+
+.sponsorship-section {
+	padding-top: 150px;
+	text-align: center;
+	background: #eee;
+}
+
+.container {
+	width: 728px;
+	margin: 0px auto 0px auto;
+	padding: 50px 0px 100px 0px;
+	text-align: left;
+}
+
+div.container div.content div.column-left {
+	width: 355px;
+	float: left;
+	text-align: center;
+}
+
+div.container div.content div.column-right {
+	width: 355px;
+	float: right;
+	text-align: center;
+}
+
+.clear {
+		clear: both;
+}
+
+div.footer {
+	margin: 20px 0px 20px 0px;
+}
+
+div.footer p {
+	color: rgb(128, 128, 128);
+	text-align: center;
+}
+
+img[width="250px"] {
+	border: 5px solid #FFFFFF;
+}
+
+img[width="728px"] {
+	border: 5px rgb(125, 1, 1);
+	border-style: dotted;
+}
+
+div.social-media a {
+	background-image:"images/facebook.jpg";
+	text-align: center;
+}
+
+div.social-media a:hover {
+	background-image:"images/facebookhover.jpg";
+}
+
+div.officer {
+	width: 100%;
+	height: 240px;
+	padding-bottom: 10px;
+}
+
+div.officer div.officer-image {
+	float: left;
+	width: 250px;
+}
+
+div.officer div.information {
+	float: right;
+	width: 450px;
+	margin-top: 30px;
+	padding-left: 20px;
+}
+
+div.officer div.information span.officer-name {
+	color: rgb(108, 14, 6);
+	font-weight: 400;
+	display: block;
+	padding-bottom: 5px;
+}
+
+div.event {
+	width: 100%;
+	height: 260px;
+	padding-bottom: 20px;
+}
+
+div.event div.event-image {
+	float: left;
+	width: 250px;
+}
+
+div.event div.information {
+	float: right;
+	width: 450px;
+	margin-top: 30px;
+	padding-left: 20px;
+}
+
+div.event div.information span.event-name {
+	color: rgb(108, 14, 6);
+	font-weight: 400;
+	display: block;
+	padding-bottom: 5px;
+}
+
+div.welcome-buttons {
+	margin-top: 70px;
+}
+
+div.contact-buttons {
+	text-align: center;
+}
+
+div.stringing-buttons {
+	text-align: center;
+}
+
+.btn {
+	color: #FFFFFF;
+	background: #333333;
+	padding: 30px 30px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: rgb(125, 1, 1);
+	color: #FFFFFF;
+}
+
+table {
+	display: table;
+	width: 728px;
+	border-spacing: 2px;
+	background-attachment: scroll;
+	background-color: #FFFFFF;
+	border-bottom-color: rgb(128,128,128);
+	border-collapse: collapse;
+	border-left-color: rgb(128,128,128);
+	border-right-color: rgb(128,128,128);
+	border-top-color: rgb(128,128,128);
+	height: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+table th {
+	display: table-cell;
+	color: #FFFFFF;
+	font-weight: 200;
+	background: rgb(108, 14, 6);
+	text-align: center;
+	padding: 3px;
+	border-bottom: 3px solid #FFFFFF;
+}
+
+table td {
+	display: table-cell;
+	background: #f8f8f8;
+	text-align: center;
+	padding: 3px;
+	border-bottom: 3px solid #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
